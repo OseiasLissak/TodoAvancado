@@ -4,23 +4,104 @@
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
+    color:#333;
 }
+
+button{
+    background-color: #fdfdfd;
+    color: #102f5e ;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #102f5e;
+    color: #fff;
+}
+button:hover > i{
+    color: #fff;
+}
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none; /* se clicar no icone, é como se clicasse */
+}
+
+
 body{
     background-color: black;
 }
-
+input, select{
+    padding: 0.25rem;
+}
+.hide{
+    display: none;
+}
 .todo-container{
-    max-width: 800px;
+    max-width: 500px;
     min-height: 40vh;
     margin: 3rem auto 0;
+    padding: 1.5rem;
     background-color: rgb(53, 137, 137);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px
+    border-radius: 15px
+}
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.todo-container header {
-    font-size: 36px;
+/* Todo Form */
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
 }
+#todo-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+.form-control input{
+    margin-right: 0.5rem;
+}
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+/* Todo toolbar */
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    
+}
+#search form{
+    display: flex;
+}
+#search-input{
+    margin-right: 0.5rem;
+}
+#search h4{
+    padding-bottom: 0.5rem;
+}
+#filter{
+    display: flex;
+    padding-top: 1rem;
+    justify-content:space-around;
+}
+#filter-select{
+    padding-left: 0.5rem;
+}
+
+
