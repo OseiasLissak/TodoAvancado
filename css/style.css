@@ -98,10 +98,20 @@ input, select{
 #filter{
     display: flex;
     padding-top: 1rem;
-    justify-content:space-around;
+    justify-content:flex-start
+}
+#filter h4{
+    padding-right: 1rem;
 }
 #filter-select{
     padding-left: 0.5rem;
 }
 
-
+/* Todo list */
+.todo{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
