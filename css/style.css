@@ -113,5 +113,6 @@ input, select{
     justify-content: space-around;
     padding: 1rem;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;,
+    transition: 0.3s;
 }
