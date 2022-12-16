@@ -110,9 +110,25 @@ input, select{
 /* Todo list */
 .todo{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around    ;
     padding: 1rem;
     align-items: center;
     border-bottom: 1px solid #ccc;,
     transition: 0.3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+}
+.todo button{
+    margin-left: 0.3rem;
+}
+.done{
+    background-color: #102f5e;
+}
+.done h3{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
 }
