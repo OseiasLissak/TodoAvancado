@@ -18,7 +18,7 @@ const saveTodo = (text) => {
     todoTitle.innerText = text
     todo.appendChild(todoTitle);
 
-    console.log(todo)
+
 
     const doneBtn = document.createElement("button");
     doneBtn.classList.add("finish-todo");
@@ -51,9 +51,11 @@ const updateTodo = (editInputValue) => {
     const todos = document.querySelectorAll(".todo")
 
     todos.forEach((todo) => {
-        let todoTitle = todo.querySelector("h3")
+        let todoTitle = todo.querySelector("h3");
 
-        if(todoTitle.innerText === oldInputValue){
+       
+        if(todoTitle.innerText === oldInputValue) {
+            
             todoTitle.innerText = editInputValue;
         }
     })
@@ -74,7 +76,9 @@ todoForm.addEventListener("submit",(e) => {
 
 document.addEventListener("click", (e)=> {
     const targetEl = e.target   //elemento clicado
+    console.log("target" + targetEl)
     const parentEl = targetEl.closest("div"); //selecionou o elemento pai "div" mais próximo = "todo"
+    console.log("target" + parentEl)
     let todoTitle;
     
     if(parentEl && parentEl.querySelector("h3")){
@@ -107,7 +111,9 @@ cancelInput.addEventListener("click", (e) => {
     todoForm();
 });
 
-editForm.addEventListener("submit", (e)=>{
+
+//Confirma EDIÇÃO
+editForm.addEventListener("submit", (e) => {
     e.preventDefault()
 
     const editInputValue = editInput.value;
