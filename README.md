@@ -1,7 +1,7 @@
 # Lista de Tarefas
 
 <p align="center">
-  <img width="100" height="88" src="img/logo.JPG">
+  <img width="500" height="500" src="img/logo.JPG">
 </p>
 
 # Sobre o Projeto
